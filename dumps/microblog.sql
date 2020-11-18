@@ -162,7 +162,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'crazyyoshi','$2y$10$.sf26tE3Cm.40MQiftpU4uhbCm5iHigkaGpU/aCnKd9HKJDDxLT6S','contact@maamar.fr','Miloud','Maamar',9),(5,'rand007','$2y$10$.sf26tE3Cm.40MQiftpU4uhbCm5iHigkaGpU/aCnKd9HKJDDxLT6S','rand.007@example.com','Nawak','Rodney',2),(6,'spdurif','$2y$10$.sf26tE3Cm.40MQiftpU4uhbCm5iHigkaGpU/aCnKd9HKJDDxLT6S','spdurif@mail.com','Sylvain Pierre','Durif',1),(7,'supra','$2y$10$.sf26tE3Cm.40MQiftpU4uhbCm5iHigkaGpU/aCnKd9HKJDDxLT6S','Supra@mail.com','Supra','Supra',0),(12,'visiteur','$2y$10$lkoliSOymoHXE1ufo0KqaOd.mXTCndkhBJ3LGITLmp/86xkzu1zQi','visiteur@mail.com','visiteur','visiteur',1);
+INSERT INTO `user` VALUES (1,'crazyyoshi','$2y$10$.sf26tE3Cm.40MQiftpU4uhbCm5iHigkaGpU/aCnKd9HKJDDxLT6S','mail@removed.com','Miloud','Maamar',9),(5,'rand007','$2y$10$.sf26tE3Cm.40MQiftpU4uhbCm5iHigkaGpU/aCnKd9HKJDDxLT6S','mail@removed.com','Nawak','Rodney',2),(6,'spdurif','$2y$10$.sf26tE3Cm.40MQiftpU4uhbCm5iHigkaGpU/aCnKd9HKJDDxLT6S','mail@removed.com','Sylvain Pierre','Durif',1),(7,'supra','$2y$10$.sf26tE3Cm.40MQiftpU4uhbCm5iHigkaGpU/aCnKd9HKJDDxLT6S','mail@removed.com','Supra','Supra',0),(12,'visiteur','$2y$10$lkoliSOymoHXE1ufo0KqaOd.mXTCndkhBJ3LGITLmp/86xkzu1zQi','mail@removed.com','visiteur','visiteur',1);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

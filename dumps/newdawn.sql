@@ -52,7 +52,7 @@ CREATE TABLE `experience` (
 
 LOCK TABLES `experience` WRITE;
 /*!40000 ALTER TABLE `experience` DISABLE KEYS */;
-INSERT INTO `experience` VALUES (1,'Laboratoire d\'Ingénierie des Systèmes de Versailes','13 avril 2015 - 24 juillet 2015','Conception et développement d\'un prototype d\'aide et d\'assistance à l\'apprentissage d\'une aide à la mobilité.','Graphiste, Développeur','https://www.maamar.fr/files/logo/lisv.svg','#fefefe','LISV','black'),(2,'AnID','Janvier 2014 - Avril 2015','Infographies, supports de communication, Identité visuelle / Travail de géolocalisation avec les Api Google Maps et Places','Développeur Web et Mobile','https://www.maamar.fr/files/logo/anid.svg','#9460a4','AnID','white'),(3,'TVFIL78','16 Juin 2014 - 16 Juillet 2014','Gestion communauté Twitter, Facebook, Google Plus; Edition et envoi de la newsletter; Gestion de contenu CMS Wordpress; Developpement d\'une nouvelle newsletter','Assistant webmaster, Community manager','https://www.maamar.fr/files/logo/tvfil78.svg','#fefefe','TVFIL78','black');
+INSERT INTO `experience` VALUES (1,'Laboratoire d\'Ingénierie des Systèmes de Versailes','13 avril 2015 - 24 juillet 2015','Conception et développement d\'un prototype d\'aide et d\'assistance à l\'apprentissage d\'une aide à la mobilité.','Graphiste, Développeur','/assets/img/lisv.svg','#fefefe','LISV','black'),(2,'AnID','Janvier 2014 - Avril 2015','Infographies, supports de communication, Identité visuelle / Travail de géolocalisation avec les Api Google Maps et Places','Développeur Web et Mobile','/assets/img/anid.svg','#9460a4','AnID','white'),(3,'TVFIL78','16 Juin 2014 - 16 Juillet 2014','Gestion communauté Twitter, Facebook, Google Plus; Edition et envoi de la newsletter; Gestion de contenu CMS Wordpress; Developpement d\'une nouvelle newsletter','Assistant webmaster, Community manager','/assets/img/tvfil78.svg','#fefefe','TVFIL78','black');
 /*!40000 ALTER TABLE `experience` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -107,7 +107,7 @@ CREATE TABLE `personal_info` (
 
 LOCK TABLES `personal_info` WRITE;
 /*!40000 ALTER TABLE `personal_info` DISABLE KEYS */;
-INSERT INTO `personal_info` VALUES ('Miloud','Maamar','4 Rue Louis Aragon','78190','Trappes','615730508','/assets/img/logo.svg','contact@maamar.fr');
+INSERT INTO `personal_info` VALUES ('Miloud','Maamar','4 Rue Louis Aragon','78190','Trappes','615730508','/assets/img/logo.svg','mail@removed.com');
 /*!40000 ALTER TABLE `personal_info` ENABLE KEYS */;
 UNLOCK TABLES;
 

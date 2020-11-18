@@ -40,9 +40,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 });
 
 app.run(['$rootScope', function( $rootScope) {
- // $rootScope.rootUrl = "http://cvbidon.lan";
- $rootScope.rootUrl = "https://cen.newdawn.amnesia.cafe";
- // $rootScope.rootUrl = "http://projets.html.css.free.fr/maamar-miloud-15610768";
+ $rootScope.rootUrl = "";
 }]);
 
 var ctrl = angular.module('newDawnCtrl', []);
@@ -105,7 +103,6 @@ ctrl.controller('ExperienceCtrl', ['$scope',
             .then(
                 //SUCCESS
                 function (data) {
-                    console.log(data);
                     $scope.experiences = data.data;
                 },
                 //ERROR
