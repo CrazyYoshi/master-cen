@@ -7,7 +7,7 @@
  */
 
 
-$db = mysqli_connect('localhost','newdawn','jemenfouscestpassecurise','microblog');
+$db = mysqli_connect('localhost','root','','microblog');
 mysqli_set_charset($db,"utf8");
 
 
