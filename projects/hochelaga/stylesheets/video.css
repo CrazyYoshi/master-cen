@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,700,900");
+/* line 5, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 9, ../sass/video.scss */
+.video-container video {
+  height: 100%;
+  width: 100%;
+}
+/* line 14, ../sass/video.scss */
+.video-container .overlay-video {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 900;
+  background-color: black;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  display: none;
+}
+/* line 25, ../sass/video.scss */
+.video-container .overlay-video .button-container {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+/* line 33, ../sass/video.scss */
+.video-container .overlay-video .play, .video-container .overlay-video .restart {
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% auto;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+@media screen and (min-width: 0px) and (max-width: 768px), handheld and (orientation: portrait) {
+  /* line 33, ../sass/video.scss */
+  .video-container .overlay-video .play, .video-container .overlay-video .restart {
+    height: 30px;
+    width: 30px;
+  }
+}
+/* line 49, ../sass/video.scss */
+.video-container .overlay-video .play {
+  background-image: url("../img/play.png");
+  margin-right: 50px;
+}
+/* line 53, ../sass/video.scss */
+.video-container .overlay-video .restart {
+  background-image: url("../img/restart.png");
+}
+
+/* line 60, ../sass/video.scss */
+#video {
+  position: relative;
+  color: #f2f91d;
+  margin-top: 50px;
+  padding: 0;
+  /*  width: 100%;
+    left: 0;*/
+}
+/* line 67, ../sass/video.scss */
+#video .video-container {
+  margin-left: 50%;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100%;
+}
+/* line 72, ../sass/video.scss */
+#video h1 {
+  font-size: 4em;
+  text-transform: uppercase;
+  width: 100%;
+  top: 45vh;
+  font-weight: bolder;
+  text-align: center;
+  position: relative;
+  transform: translateY(-50%);
+}

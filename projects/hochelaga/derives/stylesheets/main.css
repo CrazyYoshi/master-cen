@@ -1,0 +1,449 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed");
+/* line 5, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 18, ../sass/main.scss */
+html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 23, ../sass/main.scss */
+html body {
+  padding: 30px 0 0 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
+  overflow-x: hidden;
+}
+
+/* line 33, ../sass/main.scss */
+.left, .right {
+  transition: 1s;
+  opacity: 0;
+}
+/* line 36, ../sass/main.scss */
+.left.visible, .right.visible {
+  opacity: 1;
+}
+
+/* line 41, ../sass/main.scss */
+.left {
+  margin-left: -100%;
+}
+/* line 43, ../sass/main.scss */
+.left.visible {
+  margin-left: 0;
+}
+
+/* line 48, ../sass/main.scss */
+.right {
+  margin-right: -100%;
+}
+/* line 50, ../sass/main.scss */
+.right.visible {
+  margin-right: 0;
+}
+
+/* line 55, ../sass/main.scss */
+section {
+  min-height: calc(100%);
+  width: 100%;
+  position: relative;
+}
+/* line 60, ../sass/main.scss */
+section .row {
+  display: inline-block;
+  position: relative;
+  width: 90%;
+  height: auto;
+  margin-left: 5%;
+}
+/* line 66, ../sass/main.scss */
+section .row p {
+  font-size: 4em;
+  display: block;
+  line-height: 150%;
+  text-align: center;
+}
+/* line 67, ../sass/main.scss */
+section .row p::before {
+  right: 0;
+  position: relative;
+  display: inline-block;
+  content: '';
+  height: 50px;
+  width: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../content/scene 1 - eau magique/guillemet.png");
+  transform: translateX(-40px) translateY(-40px);
+}
+/* line 81, ../sass/main.scss */
+section .row p::after {
+  right: 0;
+  position: relative;
+  display: inline-block;
+  content: '';
+  height: 50px;
+  width: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../content/scene 1 - eau magique/guillemet.png");
+  transform: rotateZ(180deg) translateX(-40px) translateY(-40px);
+}
+/* line 100, ../sass/main.scss */
+section .video-container {
+  position: relative;
+  width: 70%;
+  z-index: 12;
+}
+
+/* line 107, ../sass/main.scss */
+.left {
+  float: left;
+}
+
+/* line 111, ../sass/main.scss */
+.right {
+  float: right;
+}
+
+/* line 115, ../sass/main.scss */
+.home {
+  position: relative;
+  background-color: black;
+  color: #f2f91d;
+}
+/* line 119, ../sass/main.scss */
+.home .video-container {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  height: 100vh;
+  width: 100%;
+}
+/* line 125, ../sass/main.scss */
+.home h1 {
+  font-size: 4em;
+  text-transform: uppercase;
+  width: 100%;
+  top: 45vh;
+  font-weight: bolder;
+  text-align: center;
+  position: relative;
+  transform: translateY(-50%);
+}
+
+/* line 137, ../sass/main.scss */
+.scene1 {
+  padding-top: 20px;
+}
+/* line 139, ../sass/main.scss */
+.scene1 .row1 {
+  z-index: 10;
+}
+/* line 141, ../sass/main.scss */
+.scene1 .row1 .left {
+  position: relative;
+  width: 70%;
+  z-index: 12;
+}
+/* line 146, ../sass/main.scss */
+.scene1 .row1 .right {
+  position: relative;
+  width: 30%;
+  margin-left: -5%;
+  z-index: 11;
+}
+/* line 154, ../sass/main.scss */
+.scene1 .row2 {
+  z-index: 20;
+  margin-top: -10%;
+}
+/* line 157, ../sass/main.scss */
+.scene1 .row2 .left {
+  z-index: 21;
+  width: 30%;
+}
+/* line 161, ../sass/main.scss */
+.scene1 .row2 .right {
+  z-index: 22;
+  bottom: 0;
+}
+/* line 167, ../sass/main.scss */
+.scene1 .row3 {
+  z-index: 30;
+  margin-top: -18%;
+}
+/* line 168, ../sass/main.scss */
+.scene1 .row3 .right {
+  margin-left: 10%;
+}
+
+/* line 177, ../sass/main.scss */
+.scene2 {
+  margin-top: -20%;
+}
+/* line 180, ../sass/main.scss */
+.scene2 .row1 {
+  z-index: 9;
+}
+/* line 182, ../sass/main.scss */
+.scene2 .row1 .left {
+  width: 50%;
+}
+/* line 183, ../sass/main.scss */
+.scene2 .row1 .left.visible {
+  margin-left: -10%;
+}
+/* line 189, ../sass/main.scss */
+.scene2 .row2 {
+  margin-top: -20%;
+  z-index: 10;
+}
+/* line 192, ../sass/main.scss */
+.scene2 .row2 .right {
+  position: relative;
+  width: 70%;
+  z-index: 12;
+}
+/* line 197, ../sass/main.scss */
+.scene2 .row2 .left {
+  position: relative;
+  width: 30%;
+  margin-top: 10%;
+  z-index: 11;
+}
+/* line 206, ../sass/main.scss */
+.scene2 .row3 .left {
+  width: 60%;
+  margin-top: -6%;
+}
+/* line 210, ../sass/main.scss */
+.scene2 .row3 .right {
+  margin-top: 5%;
+  font-size: 3em;
+}
+
+/* line 217, ../sass/main.scss */
+.scene3 {
+  background-image: url("../content/scene 3 - hochelaga/frise.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100% auto;
+  padding-bottom: 25%;
+}
+/* line 224, ../sass/main.scss */
+.scene3 .tache-jaune {
+  background-image: url("../content/scene 3 - hochelaga/tacheJaune.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* line 231, ../sass/main.scss */
+.scene3 .row .left {
+  float: left;
+  width: 50%;
+}
+/* line 235, ../sass/main.scss */
+.scene3 .row .right {
+  margin-top: 10%;
+  float: right;
+  width: 50%;
+}
+/* line 243, ../sass/main.scss */
+.scene3 .row1 .left {
+  width: 40%;
+}
+/* line 246, ../sass/main.scss */
+.scene3 .row1 .right {
+  width: 60%;
+}
+/* line 251, ../sass/main.scss */
+.scene3 .row2 .left {
+  margin-top: -10%;
+}
+/* line 258, ../sass/main.scss */
+.scene3 .row3 .left {
+  margin-top: -15%;
+}
+/* line 266, ../sass/main.scss */
+.scene3 .row4 {
+  margin-top: -10%;
+}
+/* line 268, ../sass/main.scss */
+.scene3 .row4 .left {
+  margin-top: -10%;
+  width: 55%;
+}
+/* line 272, ../sass/main.scss */
+.scene3 .row4 .right {
+  width: 45%;
+}
+/* line 277, ../sass/main.scss */
+.scene3 .row5 {
+  margin-top: -10%;
+}
+/* line 280, ../sass/main.scss */
+.scene3 .row5 .left {
+  width: 55%;
+  margin-top: -5%;
+}
+/* line 284, ../sass/main.scss */
+.scene3 .row5 .right {
+  margin-top: 15%;
+  width: 40%;
+}
+
+/* line 292, ../sass/main.scss */
+.scene4 .ecailles {
+  background-image: url("../content/scene 4 - mythe/ecailles.png");
+  background-repeat: no-repeat;
+  background-size: 80% auto;
+  background-position: center;
+}
+/* line 300, ../sass/main.scss */
+.scene4 .row1 .left {
+  width: 35%;
+}
+/* line 303, ../sass/main.scss */
+.scene4 .row1 .right {
+  width: 65%;
+}
+/* line 309, ../sass/main.scss */
+.scene4 .row3 button {
+  height: 200px;
+  width: 200px;
+  background-image: url("../content/scene 4 - mythe/volume.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  outline: none;
+}
+/* line 320, ../sass/main.scss */
+.scene4 .row3 .left {
+  margin-right: 50px;
+}
+
+/* line 328, ../sass/main.scss */
+.scene5 .row1 .left {
+  width: 50%;
+}
+/* line 332, ../sass/main.scss */
+.scene5 .row2 {
+  z-index: 20;
+  margin-top: -15%;
+}
+/* line 339, ../sass/main.scss */
+.scene5 .row3 {
+  z-index: 30;
+  margin-top: -4%;
+}
+/* line 346, ../sass/main.scss */
+.scene5 .row4 {
+  margin-top: -15%;
+}
+/* line 348, ../sass/main.scss */
+.scene5 .row4 .left {
+  width: 68%;
+}
+/* line 353, ../sass/main.scss */
+.scene5 .row5 {
+  margin-top: -20%;
+}
+
+/* line 363, ../sass/main.scss */
+.no-quotes::after, .no-quotes::before {
+  content: none !important;
+}
+
+/* line 368, ../sass/main.scss */
+.disclaimer {
+  position: absolute;
+  top: 0;
+  right: -190px;
+  width: 200px;
+  height: auto;
+  font-size: 0.6em;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 0 0 0 5px;
+  opacity: .2;
+  transition: .5s;
+  z-index: 100;
+}
+/* line 384, ../sass/main.scss */
+.disclaimer:hover {
+  opacity: 1;
+  right: 0px;
+  pointer: cursor;
+}

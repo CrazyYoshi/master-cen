@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,700,900");
+/* line 5, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 8, ../sass/menu.scss */
+nav {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  top: 0;
+  position: fixed;
+  z-index: 15;
+  transition: .5s;
+  font-weight: 700;
+}
+@media screen and (min-width: 0px) and (max-width: 768px), handheld and (orientation: portrait) {
+  /* line 19, ../sass/menu.scss */
+  nav h3 {
+    font-size: 20px;
+  }
+  /* line 22, ../sass/menu.scss */
+  nav a {
+    font-size: 10px;
+  }
+}
+/* line 26, ../sass/menu.scss */
+nav ul#bar {
+  font-weight: 500;
+  font-size: 20px;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-left: 50%;
+  width: 80%;
+  display: inline-block;
+  padding: 0 20px;
+}
+/* line 30, ../sass/menu.scss */
+nav ul#bar h3 {
+  position: relative;
+  display: inline-block;
+  float: left;
+  line-height: 50px;
+}
+/* line 42, ../sass/menu.scss */
+nav ul#bar li {
+  float: right;
+}
+@media screen and (min-width: 0px) and (max-width: 768px), handheld and (orientation: portrait) {
+  /* line 42, ../sass/menu.scss */
+  nav ul#bar li {
+    display: none;
+  }
+}
+/* line 48, ../sass/menu.scss */
+nav ul#bar li a {
+  position: relative;
+  margin: 0;
+  padding: 0 20px;
+  display: block;
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: none;
+  height: 50px;
+  line-height: 50px;
+  transition: .5s;
+}
+/* line 62, ../sass/menu.scss */
+nav ul#bar li a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  display: block;
+  height: calc(50px / 3);
+  width: 0%;
+  z-index: 22;
+  border-style: solid;
+  border-color: #f6f801;
+  border-width: 3px 0 3px 0;
+  transition: .5s;
+}
+/* line 78, ../sass/menu.scss */
+nav ul#bar li a:hover {
+  cursor: pointer;
+}
+/* line 79, ../sass/menu.scss */
+nav ul#bar li a:hover::after {
+  width: 80%;
+}
+/* line 87, ../sass/menu.scss */
+nav ul#bar #hamburger {
+  display: none;
+  width: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1102;
+  background: transparent;
+  float: right;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all linear 300ms;
+  transition: all linear 300ms;
+  right: 10px;
+}
+/* line 102, ../sass/menu.scss */
+nav ul#bar #hamburger span {
+  background-color: #f6f801;
+  display: block;
+  height: 5px;
+  margin-top: 5px;
+  width: 40px;
+  -webkit-transition: all linear 300ms;
+  transition: all linear 300ms;
+}
+/* line 113, ../sass/menu.scss */
+nav ul#bar #hamburger.active span {
+  margin-top: 1.5px;
+}
+/* line 115, ../sass/menu.scss */
+nav ul#bar #hamburger.active span.t1 {
+  -moz-transform: translateY(calc(50% + 8px)) rotate(-45deg);
+  -ms-transform: translateY(calc(50% + 8px)) rotate(-45deg);
+  -webkit-transform: translateY(calc(50% + 8px)) rotate(-45deg);
+  transform: translateY(calc(50% + 8px)) rotate(-45deg);
+}
+/* line 118, ../sass/menu.scss */
+nav ul#bar #hamburger.active span.t2 {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  opacity: 0;
+}
+/* line 122, ../sass/menu.scss */
+nav ul#bar #hamburger.active span.t3 {
+  -moz-transform: translateY(calc(50% - 5px)) rotate(-135deg);
+  -ms-transform: translateY(calc(50% - 5px)) rotate(-135deg);
+  -webkit-transform: translateY(calc(50% - 5px)) rotate(-135deg);
+  transform: translateY(calc(50% - 5px)) rotate(-135deg);
+}
+@media screen and (min-width: 0px) and (max-width: 768px), handheld and (orientation: portrait) {
+  /* line 87, ../sass/menu.scss */
+  nav ul#bar #hamburger {
+    display: table;
+  }
+}
+/* line 134, ../sass/menu.scss */
+nav ul#unroll {
+  display: none;
+  margin-top: 0;
+  z-index: 999;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+  border-bottom: 2px solid rgba(246, 248, 1, 0.2);
+}
+@media screen and (min-width: 0px) and (max-width: 768px), handheld and (orientation: portrait) {
+  /* line 134, ../sass/menu.scss */
+  nav ul#unroll {
+    display: block;
+  }
+}
+/* line 147, ../sass/menu.scss */
+nav ul#unroll.active {
+  margin-top: 15px;
+  max-height: 170px;
+}
+/* line 150, ../sass/menu.scss */
+nav ul#unroll.active a {
+  color: black;
+}
+/* line 155, ../sass/menu.scss */
+nav ul#unroll li {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+/* line 159, ../sass/menu.scss */
+nav ul#unroll li a {
+  position: relative;
+  margin: 0;
+  padding: 0 20px;
+  display: block;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: none;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 500;
+  transition: 2.5s ease-in-out;
+}
+/* line 173, ../sass/menu.scss */
+nav ul#unroll li a:active {
+  background-color: #f2f2f2;
+  font-weight: 700;
+}

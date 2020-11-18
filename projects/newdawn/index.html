@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="NewDawn" lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="content-langage" content="fr">
+    <meta name="description" content="Maamar Miloud, site web personnel.">
+    <meta name="keywords"
+          content="miloud, milou, miloude, mamar, maamar, mmaamar, portfolio, developpeur, front, end, back, full-stack, mmi, web, etudiant, css3, html5, site, sites, cen"/>
+    <title>Maamar Miloud - Portfolio d'un développeur web</title>
+
+    <!--/Il y a enormément de dépendance liées à mon serveur, free étant plutôt contraignant.-->
+    <!--Dépendances : RUBY, SASS, COMPASS, NODE.JS (npm), BOWER, GULP.-->
+    <!--Dans le dossier sources, vous trouverez les sources  (logique), il faut d'abord faire un npm install, puis un bower install, et ensuite un gulp production-->
+
+    <script src="/assets/js/angular.js"></script>
+    <script src="/assets/js/angular-ui-router.js"></script>
+    <script src="/assets/js/angular-animate.js"></script>
+    <script src="/assets/js/angular-sanitize.js"></script>
+    <script src="/assets/js/angular-touch.js"></script>
+    <!--jQuery juste pour ajax -> mail contact-->
+    <script src="/assets/js/jquery.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.min.css"/>
+
+    <base href="/">
+
+</head>
+<body>
+
+<nav>
+    <ul class="">
+        <h2 data="Hello sweety :D">Maamar Miloud</h2>
+        <li><a ui-sref="contact" ui-sref-active="active-state" data="Contact">Contact</a></li>
+        <!--Contre-temps, :'( oui j'avais prévu une page loisirs-->
+        <!--<li><a ui-sref="leisure" ui-sref-active="active-state" data="Loisirs">Loisirs</a></li>-->
+        <li><a ui-sref="experience" ui-sref-active="active-state" data="Expériences">Expériences</a></li>
+        <li><a ui-sref="skill" ui-sref-active="active-state" data="Compétences">Compétences</a></li>
+        <li><a ui-sref="thetrail" ui-sref-active="active-state" data="Mon parcours">Mon parcours</a></li>
+        <li><a ui-sref="home" ui-sref-active="active-state" data="Home">Home</a></li>
+    </ul>
+</nav>
+<section ui-view></section>
+
+<footer class="" ng-class="{hidden: $state.is('home')}">{{footer}}</footer>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

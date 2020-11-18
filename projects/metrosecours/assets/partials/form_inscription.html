@@ -1,0 +1,21 @@
+<label for="pseudo">Pseudo :</label>
+<input type="text" ng-model="user.pseudo" id="pseudo" ng-change="checkForm()" required> <br>
+<p>{{form.pseudo}}</p>
+
+<label for="email">Email : </label>
+<input type="email" ng-model="user.email" id="email" ng-change="checkForm()" required> <br>
+<p>{{form.email}}</p>
+
+<label for="tel">Mobile : </label>
+<input type="tel" ng-model="user.tel" id="tel" ng-change="checkForm()" required> <br>
+<p>{{form.tel}}</p>
+
+<label for="passwd">Mot de passe : </label>
+<input type="password" ng-model="user.passwd" id="passwd" ng-change="checkForm()" required> <br>
+<p>{{form.passwd}}</p>
+
+<label for="verifpasswd">Confirmer le mot de passe : </label>
+<input type="password" ng-model="user.verifpasswd" id="verifpasswd" ng-change="checkForm()" required><br>
+<p>{{form.passverif}}</p>
+<button ng-disabled="form.disabled" ng-click="signin()">Valider</button>
+<p>{{form.msg}}</p>

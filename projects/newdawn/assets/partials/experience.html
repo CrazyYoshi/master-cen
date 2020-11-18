@@ -1,0 +1,20 @@
+<div class="experiences">
+
+    <h1>Mes experiences professionnelles</h1>
+    <p>Surtout des stages, qui ont pu être très enrichissant tout comme certains ont pu être hum hum... <br>(PS: il en manque dans liste et le mouvement des blocs est pas très joli, je le reconnait, mais je n'avais pas envie d'utiliser de frameworks.)</p>
+
+    <div class="container">
+        <article ng-click="open($index)" ng-class="{'opened' : $index == openedIndex}" ng-repeat="experience in experiences" data-job="{{experience.where}}" style="background-color: {{experience.bgcolor}}; color:{{experience.color}}">
+
+            <img ng-src="{{experience.img}}" alt="{{experience.where}}">
+            <div class="content">
+                <h2>{{experience.title}}</h2>
+                <p class="job">{{experience.job}}</p>
+                <p class="period">{{experience.period}}</p>
+                <p class="tasks">{{experience.text}}</p>
+            </div>
+        </article>
+
+
+    </div>
+</div>"

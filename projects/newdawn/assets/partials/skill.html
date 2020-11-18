@@ -1,0 +1,14 @@
+<div class="skills">
+
+    <h1>Mes compétences</h1>
+
+    <p>Touche à tout que je suis, je m'égare, et mon temps aussi...</p>
+
+    <div ng-click="open($index)" ng-class="{'opened' : $index == openedIndex}" data="{{skills.name}}" class="box" ng-repeat="skills in allSkills">
+        <ul>
+            <li ng-repeat="skill in skills.skills" data="{{skill.name}}">
+                <img ng-src="{{skill.img}}" alt="{{skill.name}}">
+            </li>
+        </ul>
+    </div>
+</div>

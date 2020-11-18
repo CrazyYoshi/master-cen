@@ -1,0 +1,53 @@
+Options +FollowSymLinks
+
+
+RewriteEngine On
+
+ErrorDocument 404 /php/customs_errors/error404.php
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+#BACK OFFICE
+
+RewriteRule ^manage$                                            /php/private/index.php [QSA]
+RewriteRule ^manage/$                                           /php/private/index.php [QSA]
+RewriteRule ^manage/([a-zA-Z0-9\-]+)$                           /php/private/index.php?$1 [QSA]
+RewriteRule ^manage/([a-zA-Z0-9\-]+)/$                          /php/private/index.php?$1 [QSA]
+RewriteRule ^manage/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)$          /php/private/index.php?$1&$2 [QSA]
+RewriteRule ^manage/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/$         /php/private/index.php?$1&$2 [QSA]
+
+#TICKETS for Backoffice
+RewriteRule ^manage/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([0-9\-]+)$                           /php/private/index.php?$1&$2&id=$3 [QSA]
+RewriteRule ^manage/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([0-9\-]+)/$                          /php/private/index.php?$1&$2&id=$3 [QSA]
+RewriteRule ^manage/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([0-9\-]+)/([a-zA-Z0-9\-]+)$          /php/private/index.php?$1&$2&id=$3&title=$4 [QSA]
+RewriteRule ^manage/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([0-9\-]+)/([a-zA-Z0-9\-]+)/$         /php/private/index.php?$1&$2&id=$3&title=$4 [QSA]
+
+#USERS for Backoffice
+RewriteRule ^manage/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)$                           /php/private/index.php?$1&$2&login=$3 [QSA]
+RewriteRule ^manage/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-]+)/$                         /php/private/index.php?$1&$2&login=$3 [QSA]
+
+
+#INDEX
+
+RewriteRule ^([a-zA-Z0-9\-]+)$                                  index.php?$1 [QSA]
+RewriteRule ^([a-zA-Z0-9\-]+)/$                                 index.php?$1 [QSA]
+
+RewriteRule ^by-category/([a-zA-Z0-9\-]+)$                 index.php?t-by-c&category=$1 [QSA]
+RewriteRule ^by-category/([a-zA-Z0-9\-]+)/$                index.php?t-by-c&category=$1 [QSA]
+
+RewriteRule ^by-tag/([a-zA-Z0-9\-]+)$                 index.php?t-by-t&tag=$1 [QSA]
+RewriteRule ^by-tag/([a-zA-Z0-9\-]+)/$                index.php?t-by-t&tag=$1 [QSA]
+
+
+RewriteRule ^ticket/([a-zA-Z0-9\-]+)$                 index.php?ticket&url=$1 [QSA]
+RewriteRule ^ticket/([a-zA-Z0-9\-]+)/$                index.php?ticket&url=$1 [QSA]
+
+
+RewriteRule ^profile/([a-zA-Z0-9\-]+)$                 index.php?profile&$1 [QSA]
+RewriteRule ^profile/([a-zA-Z0-9\-]+)/$                index.php?profile&$1 [QSA]
+
+
+
+

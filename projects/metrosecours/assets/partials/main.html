@@ -1,0 +1,49 @@
+<div ng-hide="modalActive" id="modal-sign">
+    <button ui-sref="main" >Close</button>
+    <form ui-view>
+    </form>
+</div>
+
+<div id="metroFilter">
+    <label for="searchLine">Filtrer <input id="searchLine" type="text" ng-model="search"></label>
+</div>
+
+<div id="issueContainer">
+    <table>
+        <tr>
+            <th>Station</th>
+            <th>Ligne</th>
+            <th>Horaire</th>
+            <th>Nature de l'incident</th>
+            <th>Déclaré par</th>
+        </tr>
+        <tr ng-repeat="pb in problems | filter:search">
+            <td>{{pb.station}}</td>
+            <td>{{pb.line}}</td>
+            <td>{{pb.date | date : 'shortTime' : "fr_FR"}}</td>
+            <td><i ng-src="{{pb.path}}"></i>{{pb.problem}}</td>
+            <td>{{pb.pseudo}}</td>
+        </tr>
+    </table>
+</div>
+
+
+<form  ng-show="logged" id="addProblem">
+    <label for="problem">Incident
+    <select id="problem" ng-model="p.type" required ng-change="problemFormCheck()">
+        <option ng-repeat="t in pbType" value="{{t.id}}">{{t.type}}</option>
+    </select></label>
+    <label for="line">Ligne concernée
+    <select ng-model="p.line" id="line" ng-change="stationSelect(); problemFormCheck()" required>
+        <option ng-repeat="l in lines" value="{{l.id}}">Ligne {{l.name}}</option>
+    </select></label>
+    <label for="station"  ng-show="selectedLine" >Station concernée
+    <select id="station"ng-model="p.station" required ng-change="problemFormCheck()">
+        <option ng-repeat="s in selectedLine.station" value="{{s.id}}">{{s.name}}</option>
+    </select></label>
+    <button ng-disabled="p.disabled" ng-click="submitProblem()">Ajouter</button>
+    <p>{{form.msg}}</p>
+</form>
+
+
+<object id="map" type="image/svg+xml" data="/img/carte-ratp.svg"></object>

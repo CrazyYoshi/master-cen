@@ -1,0 +1,20 @@
+<div class="thetrail">
+
+    <h1>Sur ma route</h1>
+    <p><span class="epic">It was a deep blue night, our hero's journey had only begun,
+        yet he was already confronted to the trail of an unavoidable future. Besides the fact that he had no idea about how he was......</span>
+        <br> <br>Nan sans dec', admire mon parcours...</p>
+
+    <ul>
+        <li id="trail-{{$index}}" class='{{trail.liclasses}}' ng-repeat="trail in trails" >
+            <div class='trail-params {{trail.classes}}' data-y="{{trail.year}}">
+                <div class="content">
+                    <h2>{{trail.diploma}}</h2>
+                    <p>  <a href="{{trail.entity_address}}" target="_blank">{{trail.entity}}</a></p>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <!--Améliorations possible; nodes sur carte. itinéraire-->
+</div>

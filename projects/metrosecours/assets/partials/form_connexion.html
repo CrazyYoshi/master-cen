@@ -1,0 +1,12 @@
+
+    <label for="pseudo">Pseudo :</label>
+    <input type="text" ng-model="user.pseudo" id="pseudo" ng-change="checkform()" required> <br>
+    <p>{{form.pseudo}}</p>
+
+    <label for="passwd">Mot de passe : </label>
+    <input type="password" ng-model="user.passwd" id="passwd" ng-change="checkform()" required> <br>
+    <p>{{form.passwd}}</p>
+
+    <label for="rememberme">Rester connecté</label>
+    <input type="checkbox" ng-model="user.rememberme" id="rememberme"  ng-change="checkform()">
+<button ng-disabled="form.disabled" ng-click="signup()">Connexion</button>

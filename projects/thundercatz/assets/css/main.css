@@ -1,0 +1,344 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+html, body {
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #226394;
+}
+
+body {
+  width: 100%;
+  height: calc(100% - 100px);
+  padding-top: 100px;
+}
+body nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 100px;
+  z-index: 99;
+  color: #2c7fbd;
+}
+body nav ul {
+  position: relative;
+  background-color: white;
+  left: 15%;
+  width: 70%;
+  height: 100%;
+}
+body nav ul h2 {
+  display: inline-block;
+  line-height: 100px;
+  font-size: 2em;
+  width: auto;
+  height: 100px;
+}
+body nav ul img {
+  left: 10px;
+  top: 10px;
+  position: relative;
+  float: left;
+  height: calc(100px - 20px);
+}
+body nav ul li {
+  height: calc(100px - 20px);
+  line-height: calc(100px - 20px);
+  padding: 0 10px;
+  margin-top: 20px;
+  position: relative;
+  bottom: 0;
+  float: right;
+}
+body nav ul li:hover {
+  cursor: pointer;
+}
+body nav ul li:hover::after {
+  width: calc(100% - 20px);
+}
+body nav ul li::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 50px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: solid 3px #2c7fbd;
+  transition: .3s;
+}
+body video {
+  filter: grayscale(80%);
+  transition: 2s;
+}
+body video::-webkit-media-controls {
+  opacity: 0;
+  transition: .3s;
+}
+body video:hover {
+  filter: grayscale(0%);
+}
+body video:hover::-webkit-media-controls {
+  opacity: 1;
+}
+body header {
+  z-index: 80;
+  position: relative;
+  width: 100%;
+  background-color: #226394;
+}
+body header img {
+  position: relative;
+  left: 15%;
+  width: 70%;
+}
+body header ul {
+  position: absolute;
+  top: 100%;
+  left: 15%;
+  color: white;
+  padding: 20px 20px 20px 0px;
+  display: inline-block;
+  background-color: #2c7fbd;
+  transform: translateY(-50%);
+}
+body header ul h2 {
+  position: relative;
+  display: inline-block;
+  padding: 0 40px 5px 20px;
+}
+body header ul h2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20px;
+  height: 100%;
+  border-bottom: solid 5px #1f5f90;
+  width: calc(100% - 60px);
+}
+body header ul li {
+  position: relative;
+  padding: 15px 15px;
+  border-radius: 5px;
+  background-color: #1f5f90;
+  display: inline-block;
+  transition: .3s;
+}
+body header ul li:hover {
+  cursor: pointer;
+  background-color: #3f94d6;
+}
+body main {
+  position: relative;
+  left: 15%;
+  width: 70%;
+  padding: 60px 0;
+  background-color: white;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+body main > * {
+  width: 80%;
+}
+body main article {
+  position: relative;
+  overflow: hidden;
+  z-index: 40;
+}
+body main article > div {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  background-color: transparent;
+  position: absolute;
+  transition: .5s;
+  opacity: 0.5;
+}
+body main article > div:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+body main article > div:hover > div {
+  background-color: transparent;
+}
+body main article > div:hover + img {
+  filter: grayscale(100%);
+}
+body main article > div > div {
+  padding: 10px;
+  transition: .5s;
+  height: auto;
+  width: calc(100% - 20px);
+  margin-top: auto;
+  position: relative;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+body main article > div > div h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+body main article img {
+  z-index: 45;
+  position: relative;
+  left: 50%;
+  height: 100%;
+  filter: grayscale(20%);
+  transition: .5s;
+  transform: translateX(-50%);
+}
+body main #full-width {
+  height: 500px;
+  margin-top: 60px;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+}
+body main #full-width #left-bloc {
+  height: 100%;
+  position: relative;
+  width: 60%;
+  margin-right: 20px;
+}
+body main #full-width #right-bloc {
+  position: relative;
+  height: 100%;
+  width: 40%;
+}
+body main #full-width #right-bloc article {
+  height: 240px;
+}
+body main #full-width #right-bloc article img {
+  width: 100%;
+}
+body main #full-width #right-bloc > article:nth-of-type(1) {
+  margin-bottom: 20px;
+}
+body footer {
+  background-color: #2c7fbd;
+  position: relative;
+  display: block;
+  left: 15%;
+  width: 70%;
+  padding: 80px 0;
+}
+body footer form {
+  position: relative;
+  left: 20%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 300px;
+}
+body footer form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  text-align: left;
+  width: calc(100% - 20px);
+  border-radius: 5px;
+}
+body footer form h2, body footer form label {
+  margin-bottom: 5px;
+  width: 100%;
+  text-align: left;
+  color: white;
+}
+body footer form h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+body footer form button {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  background-color: #f10000;
+  color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+body #signature {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 20px 0;
+  position: relative;
+  display: block;
+  left: 15%;
+  width: 70%;
+  text-align: center;
+}

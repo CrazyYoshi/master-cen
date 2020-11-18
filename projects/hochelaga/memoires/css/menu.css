@@ -1,0 +1,81 @@
+
+/* line 36, ../sass/main.scss */
+nav {
+    font-family: Raleway;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    z-index: 999;
+    transition: .5s;
+    opacity: .2;
+}
+/* line 48, ../sass/main.scss */
+nav:hover {
+    opacity: 1;
+}
+/* line 51, ../sass/main.scss */
+nav ul {
+    font-weight: 800;
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-left: 50%;
+    width: 80%;
+    display: inline-block;
+    padding: 0 20px;
+}
+/* line 53, ../sass/main.scss */
+nav ul h3 {
+    position: relative;
+    display: inline-block;
+    float: left;
+    font-size: 1.2em;
+    line-height: 50px;
+    font-weight: 700;
+}
+/* line 65, ../sass/main.scss */
+nav ul li {
+    float: right;
+}
+/* line 67, ../sass/main.scss */
+nav ul li a {
+    position: relative;
+    margin: 0;
+    padding: 0 20px;
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-transform: none;
+    height: 50px;
+    line-height: 50px;
+    transition: .5s;
+}
+/* line 81, ../sass/main.scss */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    display: block;
+    height: calc(50px/2);
+    width: 0%;
+    z-index: 22;
+    border-style: solid;
+    border-color: rgba(209, 221, 51, 1);
+    border-width: 3px 0 3px 0;
+    transition: .5s;
+}
+/* line 97, ../sass/main.scss */
+nav ul li a:hover {
+    cursor: pointer;
+}
+/* line 98, ../sass/main.scss */
+nav ul li a:hover::after {
+    width: 80%;
+}
+

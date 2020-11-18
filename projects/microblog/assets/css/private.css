@@ -1,0 +1,574 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+table, th, td {
+  border-collapse: collapse;
+}
+
+table th {
+  padding: 10px;
+  text-align: left;
+  background-color: #7bb66b;
+  color: white;
+}
+table th.reset {
+  padding: 0 !important;
+}
+table th.reset label {
+  padding: 10px;
+  width: calc(100% - 20px);
+}
+table th, table td {
+  height: 1px;
+}
+table input, table a, table select, table textarea {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  padding: 10px 10px;
+  border: none;
+  outline: none;
+  min-height: 100%;
+  width: calc(100% - 20px);
+  background-color: inherit;
+  transition: .3s;
+}
+table input:hover, table a:hover, table select:hover, table textarea:hover {
+  background-color: #a7ce9d;
+  cursor: pointer;
+}
+table select {
+  width: 100%;
+}
+table a {
+  line-height: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+table tr td:nth-of-type(odd) {
+  background-color: rgba(211, 231, 206, 0.4);
+}
+table tr td:nth-of-type(even) {
+  background-color: rgba(167, 206, 157, 0.4);
+}
+table tr:nth-of-type(odd) {
+  background-color: rgba(211, 231, 206, 0.4);
+}
+table tr:nth-of-type(even) {
+  background-color: rgba(167, 206, 157, 0.4);
+}
+table label {
+  padding: 10px 10px;
+  display: block;
+  width: calc(100% - 20px);
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+}
+table label:hover {
+  background-color: #a7ce9d;
+  cursor: pointer;
+}
+table label::before {
+  padding: 10px 10px;
+  z-index: 20;
+  content: "Annuler";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  background-color: red;
+  opacity: 0;
+  color: white;
+}
+table textarea {
+  min-height: 90px;
+  width: 300px;
+}
+table input[type="checkbox"] {
+  display: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  border: none;
+  padding: 12px;
+  margin-bottom: 5px;
+  background-color: #7bb66b;
+  color: white;
+  outline: none;
+}
+table input[type="checkbox"]:-moz-placeholder {
+  color: #0a2602;
+}
+table input[type="checkbox"]::-moz-placeholder {
+  color: #0a2602;
+}
+table input[type="checkbox"]:-ms-input-placeholder {
+  color: #0a2602;
+}
+table input[type="checkbox"]::-webkit-input-placeholder {
+  color: #0a2602;
+}
+table input[type="checkbox"]:focus {
+  background-color: #238509;
+}
+table input[type="checkbox"] + label {
+  transition: .5s;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                   supported by Chrome and Opera */
+}
+table input[type="checkbox"] + label:hover {
+  cursor: pointer;
+}
+table input[type="checkbox"]:checked + label::before {
+  opacity: 1;
+}
+table td.pure-cell {
+  padding: 5px 10px;
+}
+table tr.submit-row {
+  background-color: transparent;
+}
+table tr.submit-row td {
+  background-color: transparent;
+}
+table tr.submit-row td button {
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #7bb66b;
+  color: white;
+  outline: none;
+}
+table tr.submit-row td button:-moz-placeholder {
+  color: #0a2602;
+}
+table tr.submit-row td button::-moz-placeholder {
+  color: #0a2602;
+}
+table tr.submit-row td button:-ms-input-placeholder {
+  color: #0a2602;
+}
+table tr.submit-row td button::-webkit-input-placeholder {
+  color: #0a2602;
+}
+table tr.submit-row td button:focus {
+  background-color: #238509;
+}
+table tr.submit-row td button:hover {
+  background-color: #1e8e00;
+  cursor: pointer;
+}
+
+table.pure-table td {
+  padding: 10px 10px;
+}
+table.pure-table td.link-cell {
+  padding: 0;
+}
+
+form.add {
+  position: relative;
+  width: 40%;
+}
+form.add > * {
+  margin-bottom: 10px;
+  position: relative;
+  display: block;
+}
+form.add .label {
+  font-size: 1.3em;
+  margin-top: 15px;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                   supported by Chrome and Opera */
+}
+form.add > h2 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+form.add textarea.normal {
+  width: calc(100% - 24px);
+  min-height: 80px;
+  resize: vertical;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  border: none;
+  padding: 12px;
+  margin-bottom: 5px;
+  background-color: #7bb66b;
+  color: white;
+  outline: none;
+}
+form.add textarea.normal:-moz-placeholder {
+  color: #0a2602;
+}
+form.add textarea.normal::-moz-placeholder {
+  color: #0a2602;
+}
+form.add textarea.normal:-ms-input-placeholder {
+  color: #0a2602;
+}
+form.add textarea.normal::-webkit-input-placeholder {
+  color: #0a2602;
+}
+form.add textarea.normal:focus {
+  background-color: #238509;
+}
+form.add > button {
+  margin-top: 20px;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  border: none;
+  padding: 12px;
+  margin-bottom: 5px;
+  background-color: #7bb66b;
+  color: white;
+  outline: none;
+}
+form.add > button:-moz-placeholder {
+  color: #0a2602;
+}
+form.add > button::-moz-placeholder {
+  color: #0a2602;
+}
+form.add > button:-ms-input-placeholder {
+  color: #0a2602;
+}
+form.add > button::-webkit-input-placeholder {
+  color: #0a2602;
+}
+form.add > button:focus {
+  background-color: #238509;
+}
+form.add > input, form.add select {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  border: none;
+  padding: 12px;
+  margin-bottom: 5px;
+  background-color: #7bb66b;
+  color: white;
+  outline: none;
+  width: calc(100% - 24px);
+}
+form.add > input:-moz-placeholder, form.add select:-moz-placeholder {
+  color: #0a2602;
+}
+form.add > input::-moz-placeholder, form.add select::-moz-placeholder {
+  color: #0a2602;
+}
+form.add > input:-ms-input-placeholder, form.add select:-ms-input-placeholder {
+  color: #0a2602;
+}
+form.add > input::-webkit-input-placeholder, form.add select::-webkit-input-placeholder {
+  color: #0a2602;
+}
+form.add > input:focus, form.add select:focus {
+  background-color: #238509;
+}
+form.add > #tags {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+form.add > #tags input[type="checkbox"] {
+  display: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  border: none;
+  padding: 12px;
+  margin-bottom: 5px;
+  background-color: #7bb66b;
+  color: white;
+  outline: none;
+}
+form.add > #tags input[type="checkbox"]:-moz-placeholder {
+  color: #0a2602;
+}
+form.add > #tags input[type="checkbox"]::-moz-placeholder {
+  color: #0a2602;
+}
+form.add > #tags input[type="checkbox"]:-ms-input-placeholder {
+  color: #0a2602;
+}
+form.add > #tags input[type="checkbox"]::-webkit-input-placeholder {
+  color: #0a2602;
+}
+form.add > #tags input[type="checkbox"]:focus {
+  background-color: #238509;
+}
+form.add > #tags > input[type="checkbox"] + label {
+  padding: 10px;
+  border: solid 1px #7bb66b;
+  margin: 3px;
+  transition: .5s;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                   supported by Chrome and Opera */
+}
+form.add > #tags > input[type="checkbox"] + label:hover {
+  cursor: pointer;
+}
+form.add > #tags input[type="checkbox"]:checked + label {
+  background-color: #7bb66b;
+  color: white;
+}
+form.add .important {
+  text-align: right;
+  color: red;
+  font-size: .8em;
+}
+form.add .important::before {
+  content: '* ';
+}
+form.add .small-label {
+  position: relative;
+  font-size: .8em;
+  text-align: center;
+}
+form.add .mce-panel {
+  border: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 1em;
+  font-family: 'Raleway', sans-serif;
+  height: calc(100% - 50px);
+  padding: 50px 0 0 0;
+  margin: 0;
+  position: relative;
+}
+
+nav {
+  background-color: #101010;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  position: fixed;
+  overflow: hidden;
+  z-index: 10;
+  transition: .5s;
+}
+nav ul {
+  transform: translateX(-50%);
+  margin-left: 50%;
+  width: 80%;
+  display: inline-block;
+  padding: 0 20px;
+}
+nav ul h2 {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0 20px;
+  color: white;
+  display: block;
+  text-decoration: none;
+  text-transform: none;
+  height: 50px;
+  line-height: 50px;
+  transition: .5s;
+  border-top: 0px solid #101010;
+  z-index: 5;
+  font-size: 1.2em;
+}
+nav ul li {
+  float: right;
+}
+nav ul li a {
+  position: relative;
+  margin: 0;
+  padding: 0 20px;
+  color: white;
+  display: block;
+  text-decoration: none;
+  height: 50px;
+  line-height: 50px;
+  transition: .5s;
+}
+nav ul li a:hover {
+  cursor: pointer;
+  background-color: #238509;
+}
+nav ul li a.active {
+  background-color: #238509;
+}
+
+.submenu {
+  display: block;
+  position: relative;
+  height: 50px;
+  width: 80%;
+  list-style: none;
+  background-color: #238509;
+  padding: 0 10%;
+}
+.submenu li {
+  line-height: 50px;
+  float: right;
+  display: block;
+  position: relative;
+}
+.submenu li a {
+  position: relative;
+  display: block;
+  height: 50px;
+  color: white;
+  text-decoration: none;
+  padding: 0 20px;
+  transition: .3s;
+}
+.submenu li a:hover {
+  background-color: #3CE50F;
+}
+
+#container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: baseline;
+      align-items: baseline;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+  min-height: calc(100% - 50px);
+}
+
+footer {
+  position: relative;
+  display: block;
+  height: 50px;
+  text-align: center;
+  width: 100%;
+  line-height: 50px;
+  z-index: 4;
+  color: #3CE50F;
+}
+footer a {
+  color: inherit;
+}
+
+h1 {
+  position: relative;
+  display: block;
+  font-size: 2.2em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #238509;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}

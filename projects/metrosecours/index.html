@@ -1,0 +1,37 @@
+<!doctype html>
+<html ng-app="metroSecours" lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <title>metrOsecours</title>
+    <link rel="icon" href="/img/flavicon.png">
+    <link rel="stylesheet" href="/css/main.css" type="text/css">
+    <script src="/js/libs.min.js"></script>
+    <script src="/js/main.min.js"></script>
+    <base href="/">
+</head>
+
+<body>
+<nav>
+    <img src="/img/logo/logo-metrosecours.png" class="logo" alt=""/>
+    <ul id="connexion">
+        <li ng-show="logged">{{loggedUser.pseudo}}</li>
+        <li><a ui-sref="main">Carte</a></li>
+        <li ng-hide="logged"><a ui-sref="main.signup">Connexion</a></li>
+        <li ng-hide="logged"><a ui-sref="main.signin">Inscription</a></li>
+        <li ng-show="logged"><a ui-sref="profile.manage">Profil</a></li>
+        <li ng-show="logged"><a ui-sref="main" ng-click="logOut()">Déconnexion</a></li>
+    </ul>
+</nav>
+
+<div ng-bind-html="debug"></div>
+<section ui-view></section>
+
+<div id="toCome" ng-show="toCome">Nouveautés à venir : Carte intéractive et challenges !<button ng-click="toCome=false">X</button></div>
+<footer>
+    <span>2018 metrOsecours</span>
+    <a ui-sref="contact">Contactez-nous</a>
+    <a ui-sref="main">Mentions légales</a>
+
+</footer>
+</body>
+</html>
